@@ -1,15 +1,14 @@
   import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
-
+import Navbar from './components/Navbar';
+import Header from './components/Header';
 function App() {
 
 
   return (
     <>
-    <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+    <Header/>
+    
     </>
   )
 }
