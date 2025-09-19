@@ -7,25 +7,25 @@ export const LinkData=[
     {
         "name":"Github",
         "url":"https://github.com/samanvitha-channagiri",
-         "IconComponent":<GithubIcon/>
+         "IconComponent":GithubIcon
 
     },
      {
         "name":"Portfolio",
         "url":"https://samanvitha-c.vercel.app",
-         "IconComponent":<WorkIcon/>
+         "IconComponent":WorkIcon
 
     },
     {
         "name":"Linkedin",
         "url":"https://www.linkedin.com/in/samanvitha-c/",
-         "IconComponent":<LinkedInIcon/>
+         "IconComponent":LinkedInIcon
 
     },
     {
-        "name":"X",
+        "name":"Twitter",
         "url":"https://github.com/samanvitha-channagiri",
-         "IconComponent":<XIcon/>
+         "IconComponent":TwitterIcon
 
     },
 ]

@@ -2,12 +2,18 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
+import Card from './components/Card';
 function App() {
 
 
   return (
     <>
-    <Header/>
+    <div className='flex flex-col items-center '>
+
+       <Header/>
+    <Card/>
+    </div>
+   
     
     </>
   )
