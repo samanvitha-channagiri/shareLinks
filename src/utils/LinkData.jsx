@@ -1,13 +1,12 @@
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GithubIcon from '@mui/icons-material/Github';
-
+    import GitHubIcon from '@mui/icons-material/GitHub';
 import WorkIcon from '@mui/icons-material/Work';
 export const LinkData=[
     {
         "name":"Github",
         "url":"https://github.com/samanvitha-channagiri",
-         "IconComponent":GithubIcon
+         "IconComponent":GitHubIcon
 
     },
      {
