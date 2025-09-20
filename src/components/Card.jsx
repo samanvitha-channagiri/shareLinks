@@ -11,14 +11,19 @@ const Card = () => {
   }
   
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8">
-      {LinkData.map(({ name, url, IconComponent }) => {
+    <div className="w-full px-4 mt-[30px] space-y-4">
+      {LinkData.map(({ name, url, IconComponent, bgColor }) => {
         return (
           <div key={name}  
           onClick={()=>handleCardClick(url)}
-          className="w-full max-w-[280px] sm:max-w-[400px] md:max-w-[600px] lg:max-w-[800px] h-[50px] sm:h-[55px] md:h-[60px] flex items-center p-[0px] sm:p-[15px] rounded mt-3 sm:mt-5 font-bold text-sm sm:text-lg md:text-xl transition-all duration-200 ease-linear hover:shadow-[2px_8px_10px_rgba(0,0,0,0.4)] hover:cursor-pointer mx-auto bg-gray-100 hover:bg-gray-200">
-            <IconComponent className="text-lg sm:text-xl md:text-2xl transition-transform duration-300 ease-in-out hover:rotate-12 hover:scale-110" />
-            <p className="ml-[8px] sm:ml-[10px] md:ml-[12px]" >{name}</p>
+          className={`w-full max-w-[400px] h-[55px] flex items-center justify-between px-[20px] rounded-[15px] font-medium text-[16px] transition-all duration-200 ease-linear hover:transform hover:scale-[1.05] hover:cursor-pointer mx-auto ${bgColor} text-white shadow-lg`}>
+            <div className="flex items-center">
+              <IconComponent className="text-[18px] mr-[12px] transition-transform duration-300 ease-in-out hover:rotate-12 hover:scale-110" />
+              <span>{name}</span>
+            </div>
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+            </svg>
           </div>
         );
       })}
