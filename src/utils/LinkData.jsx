@@ -12,7 +12,7 @@ export const LinkData=[
     },
     {
         "name":"Twitter / X",
-        "url":"https://github.com/samanvitha-channagiri",
+        "url":"https://x.com/samiitwts",
         "IconComponent":TwitterIcon,
         "bgColor":"bg-gradient-to-r from-purple-500 to-blue-500"
     },
